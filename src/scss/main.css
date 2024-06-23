@@ -1,0 +1,428 @@
+@charset "UTF-8";
+body {
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  background: #ffffff;
+}
+@font-face {
+  font-family: "Clash Display";
+  src: url("./font/ClashDisplay-Extralight.woff2") format("woff2"), url("./font/ClashDisplay-Extralight.woff") format("woff"), url("./font/ClashDisplay-Extralight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Clash Display";
+  src: url("./font/ClashDisplay-Semibold.woff2") format("woff2"), url("./font/ClashDisplay-Semibold.woff") format("woff"), url("./font/ClashDisplay-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Clash Display";
+  src: url("./font/ClashDisplay-Medium.woff2") format("woff2"), url("./font/ClashDisplay-Medium.woff") format("woff"), url("./font/ClashDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Clash Display";
+  src: url("./font/ClashDisplay-Bold.woff2") format("woff2"), url("./font/ClashDisplay-Bold.woff") format("woff"), url("./font/ClashDisplay-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Clash Display";
+  src: url("./font/ClashDisplay-Regular.woff2") format("woff2"), url("./font/ClashDisplay-Regular.woff") format("woff"), url("./font/ClashDisplay-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Clash Display";
+  src: url("./font/ClashDisplay-Light.woff2") format("woff2"), url("./font/ClashDisplay-Light.woff") format("woff"), url("./font/ClashDisplay-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+body .displayCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .displayColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .displayStart {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+body .displayEnd {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+body .displaySpacebetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .logoImg {
+  width: 180px;
+  margin-top: 18px;
+}
+body .crypto {
+  animation: rotating3 3s linear infinite;
+}
+@keyframes rotating3 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating2 {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+body .sliderBox {
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  background-color: #121212;
+  border-top: 3px solid #e35f24;
+  text-align: center;
+}
+body .sliderBox img {
+  width: auto;
+  max-width: 165px;
+}
+body .chartBox {
+  position: relative;
+  width: 160px !important;
+  height: 100px !important;
+  min-height: 100px !important;
+}
+body .ChartFileBox {
+  position: relative;
+  width: 160px !important;
+  height: 80px !important;
+  min-height: 80px !important;
+}
+body .MuiList-padding {
+  padding: 8px;
+}
+body .gradientBox {
+  padding: 1px;
+  background: linear-gradient(279.31deg, #ec1f24 5.51%, rgba(144, 56, 255, 0) 11.86%), linear-gradient(100.56deg, #ec1f24 6.09%, hsla(0, 0%, 100%, 0) 17.3%), linear-gradient(0deg, hsla(0, 0%, 100%, 0.03), hsla(0, 0%, 100%, 0.03));
+  border-radius: 10px;
+}
+body * {
+  scrollbar-width: 0px;
+  scrollbar-width: none;
+}
+body ::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+body ::-moz-scrollbar {
+  width: 0;
+  background: transparent;
+}
+body ::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+body .textfiledicons .MuiIconButton-root {
+  color: #ec1f24 !important;
+  padding: 6px;
+  font-size: 17px;
+  border: 1.2px solid #c9c9c9;
+  margin-left: -4px;
+  border-radius: 8px;
+  margin-right: 8px;
+}
+body .mainTab {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 50px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 3px;
+}
+body .tabActiveButtons {
+  background: #ec1f24;
+  border-radius: 50px;
+  padding: 11px 23px;
+  color: #fff !important;
+  transition: 0.8s;
+  cursor: pointer;
+  white-space: pre;
+  transition: all 500ms ease-in-out;
+}
+body .tabButtons {
+  border-radius: 50px;
+  padding: 11px 23px;
+  white-space: pre;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.4);
+}
+body .supportedBox {
+  background: #000;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .supportedBox::before {
+  content: " ";
+  position: absolute;
+  /* top: 0px; */
+  width: 240px;
+  height: 200%;
+  animation: animate 10s linear infinite;
+  background: rgba(253, 199, 99, 0.25);
+}
+body .borderSpaceTable .MuiTable-root {
+  border-collapse: separate;
+  border-spacing: 0px 10px;
+}
+body .borderSpaceTable .MuiTableRow-root {
+  background: #f4f7ff;
+  border-radius: 5px;
+}
+body .borderSpaceTable .MuiTableCell-root {
+  padding: 20px 16px;
+}
+body .transactionTable .MuiTableCell-head {
+  background: #ffffff;
+  font-weight: 300 !important;
+  color: #78819f !important;
+}
+body .transactionTable .MuiTableHead-root {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+body .transactionTable .MuiTableRow-root {
+  vertical-align: middle;
+  background: #fbfbfb;
+}
+body .react-tel-input .flag-dropdown {
+  border-radius: 7px 0 0 7px !important;
+  background-color: #ededed;
+}
+body .react-tel-input .flag {
+  border-radius: 100px;
+}
+body .react-tel-input .flag-dropdown.open {
+  border-radius: 7px 0 0 7px !important;
+}
+body .react-tel-input .flag-dropdown.open .selected-flag {
+  border-radius: 7px 0 0 7px !important;
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+body .MuiButton-contained.Mui-disabled {
+  color: rgba(255, 255, 255, 0.3019607843) !important;
+}
+body .p2pTable .MuiTableCell-head {
+  background: #ffffff;
+  font-weight: 300 !important;
+  color: #78819f !important;
+  padding: 7px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+body .p2pTable .MuiTableHead-root {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+body .p2pTable .MuiTableRow-root {
+  vertical-align: middle;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+body .MuiAutocomplete-paper {
+  padding: 5px 10px !important;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+body .slidercssBox .slick-dots li button:before {
+  font-size: 50px;
+  content: "─";
+  color: #000;
+}
+body .slidercssBox .slick-dots li {
+  width: 30px;
+}
+body .slidercssBox .slick-dots li.slick-active button:before {
+  color: #ec1f24;
+  opacity: 1;
+}
+body .slidercssBox .slick-dots {
+  bottom: -70px;
+}
+body .css-1u9des2-indicatorSeparator {
+  background-color: transparent !important;
+}
+body .css-13cymwt-control {
+  border-radius: 5px !important;
+  min-height: 46px !important;
+  background-color: #f9f9f9 !important;
+  border-color: #eceaea !important;
+}
+body .css-t3ipsp-control {
+  min-height: 46px !important;
+}
+body .css-1jqq78o-placeholder {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+body .css-1dimb5e-singleValue {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+body .greenbutton {
+  color: #ffffff !important;
+  font-size: 14px !important;
+  background: #4ed46c !important;
+  font-style: normal !important;
+  text-align: center !important;
+  font-family: "Poppins" !important;
+  font-weight: 700 !important;
+  line-height: 21px !important;
+  border-radius: 100px !important;
+  padding: 8px 30px !important;
+}
+body .greenbutton:hover {
+  background-color: #48e36a;
+}
+body .MuiOutlinedInput .MuiOutlinedInput-root {
+  background: #ffffff;
+  border-radius: 50px;
+}
+body .whiteSpace {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body .wordBreak {
+  word-break: break-all;
+}
+body .css-1nmdiq5-menu {
+  font-size: 12px;
+}
+body .blackButton {
+  color: #fff;
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  height: 52px;
+  padding: 19px 30px;
+  font-size: 20px;
+  background: #080515;
+  font-weight: 400;
+  border-radius: 50px !important;
+}
+body .MuiFormHelperText-contained {
+  margin-left: 0px !important;
+}
+
+* {
+  scrollbar-width: 0px;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+::-moz-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+@media (max-width: 1024px) {
+  .transactionTable {
+    display: none;
+  }
+  .shadeBox {
+    display: none;
+  }
+  .logoImg {
+    width: 119px;
+  }
+}
+@media (max-width: 991px) {
+  .transactionTable {
+    display: none;
+  }
+  .shadeBox {
+    display: none;
+  }
+  .logoImg {
+    width: 119px;
+  }
+}
+@media (max-width: 767px) {
+  .transactionTable {
+    display: none;
+  }
+  .orangeshadeBox {
+    display: none;
+  }
+  .purpleBox {
+    display: none;
+  }
+  .shadeBox {
+    display: none;
+  }
+  .logoImg {
+    width: 119px;
+  }
+  .sliderBox img {
+    width: auto;
+    max-width: 135px;
+  }
+}/*# sourceMappingURL=main.css.map */

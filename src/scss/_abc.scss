@@ -1,0 +1,18 @@
+* {
+  scrollbar-width: 0px;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+::-moz-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
